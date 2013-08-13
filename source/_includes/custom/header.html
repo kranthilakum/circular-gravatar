@@ -1,0 +1,13 @@
+<hgroup>
+  <div class="header-title">
+  <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+  {% if site.subtitle %}
+    <h2>{{ site.subtitle }}</h2>
+  {% endif %}
+  </div>
+  {% if site.gravatar_image %}
+  <div>
+	<img class="circular-image" src="{% gravatar_image 120 %}" alt="Gravatar of {{ site.author }}" />
+  </div>
+  {% endif %}
+</hgroup>
